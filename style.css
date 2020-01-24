@@ -1,4 +1,20 @@
+* {
+outline: 1px dotted red;
+}
+div {
+ outline: : solid 2px red;
+}
+
+span {
+ outline: solid 1px green;
+}
+
+p {
+ outline: solid 1px blue;
+}
+/*это потом убрать */
 body {
+  min-width: 1040px;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -8,7 +24,17 @@ body {
   background-color: white;
 }
 
+
+
+.container {
+	
+  width: 1020px;
+  margin: 0 auto;
+}
+
 .page-header {
+  min-height: 490px;
+  padding-top: 35px;
   background-image: url("img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -17,13 +43,38 @@ body {
 
 .page-header,
 .page-footer {
-  padding: 10px;
   color: #c3c3c3;
   background-color: #363636;
 }
+.header-top {
+	display: flex;
+	align-items: center;
+	margin-bottom: 125px;
+}
 
+
+.header-logo {
+	width: 205px;
+	height: 55px;
+}
+
+.header-top a {
+	margin-left: auto;
+}
 .main-nav {
-  list-style: none;
+	display: flex;
+	align-content: center;	
+	
+	margin: 0;
+	padding: 0;
+	
+	width: 520px;
+	margin-left: 125px;
+	list-style: none;
+}
+
+.main-nav li {
+	padding-right: 50px;
 }
 
 .main-nav li {
@@ -63,6 +114,7 @@ body {
   line-height: 55px;
   font-family: "Georgia", serif;
   text-align: center;
+ 
 }
 
 .promo a {
@@ -70,18 +122,37 @@ body {
   text-decoration: none;
 }
 
+
+.features {
+	padding-top: 50px;
+	padding-bottom: 55px;
+
+}
+.test {
+	margin: 0;
+}
 .features ul {
+	display: flex;
   list-style: none;
+/*  margin: 0;
+  padding: 0;*/
+	justify-content: center;
+  
 }
 
 .feature-item {
+	margin: 0;
+	padding: 0;
   padding-top: 90px;
   text-align: center;
   border-left: 1px solid #d9d9d9;
+  width: 279px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .feature-item:first-child {
-  border-left: none;
+  border-left: transparent;
 }
 
 .feature-choice {
@@ -102,6 +173,11 @@ body {
   line-height: 30px;
   font-family: "Georgia", serif;
   color: #a38b70;
+}
+
+.features p {
+	margin: 0;
+	padding: 0;
 }
 
 .cat-reference {
@@ -194,10 +270,10 @@ body {
 }
 
 .feedback-form {
+  padding-right: 390px;
   background-image: url("img/write.jpg");
   background-repeat: no-repeat;
   background-position: 100% 40px;
-  padding-right: 390px;
 }
 
 .feedback-form-group {
