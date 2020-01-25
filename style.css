@@ -29,9 +29,16 @@ body {
   border: 1px solid #000;
 }
 
+/*это центровщик*/
 .container {
 	width: 1020px;
 	margin: 0 auto;
+}
+
+/*для h2 и кнопки*/
+.wraper {
+	display: flex;
+	justify-content: space-between;
 }
 
 .page-header {
@@ -146,8 +153,6 @@ body {
     width: 279px;
     padding-left: 30px;
     padding-right: 30px;
-
-    border: 1px solid yellow;
 }
 
 .feature-item:first-child {
@@ -185,18 +190,17 @@ body {
 /*REFERENCES*/
 
 .cat-reference {
-	width: 1020px;
-	padding: 70px 10px 90px;
-
+	padding-top: 70px;
+	padding-bottom: 90px;
+	
 	background-color: #f2f2f2;
 }
 
-.cat-reference-container {
+.wraper {
 	display: flex;
 	justify-content: space-between;
 	
-	margin: 0 auto;
-	padding-bottom: 75px;
+	margin-bottom: 65px;
 }
 
 .section-title {
@@ -207,33 +211,35 @@ body {
   color: #a38b70;
 }
 
-.reference-title-container:first-child {
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.reference-title-wraper:first-child {
 	margin-bottom: 70px;
 }
 
-.cat-reference dl {
+.cat-reference dl, dd, dt {
 	margin: 0;
+	padding: 0;
 }
 
 .cat-reference dt {
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.cat-reference dd {
-	margin: 0;
-}
-
-.cat-reference dd:first-child {
-	margin-bottom: 70px;
+	margin-bottom: 10px;
 }
 
 .cat-reference dd img {
   border-radius: 5px;
   float: left;
+
 }
 
 .cat-reference p {
+	margin: 0;
+	padding: 0;
+
 	padding-left: 130px;
 	padding-right: 200px;
 }
@@ -266,13 +272,8 @@ body {
 
 /*reviews*/
 .reviews {
-	padding-top: 65px;
+	padding-top: 70px;
 	padding-bottom: 90px;
-}
-.reviews-wraper {
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 70px;
 }
 
 .reviews-list {
@@ -300,8 +301,20 @@ body {
   font-style: italic;
 }
 
+/*POPULAR AND PRICE*/
+
 .popular-and-price {
+	padding-top: 70px;
+	padding-bottom: 90px;
+
   background-color: #f2f2f2;
+}
+
+.popular-items {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 50px;
 }
 
 .catalog-item h3 {
@@ -340,7 +353,13 @@ body {
   color: #000000;
 }
 
+.feedback {
+	margin-top: 60px;
+	margin-bottom: 70px;
+}
+
 .feedback-form {
+	width: 630px;
   padding-right: 390px;
   background-image: url("img/write.jpg");
   background-repeat: no-repeat;
@@ -380,8 +399,31 @@ body {
   border-bottom: 1px solid #d5d5d5;
 }
 
+/*PAGE FOOTER*/
+
 .page-footer {
-  margin-top: 20px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 45px;
+}
+
+.footer-middle {
+	display: flex;
+
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+
+.footer-bottom {
+	display: flex;
+	padding-top: 50px;
+
 }
 
 .footer-middle,
@@ -389,7 +431,12 @@ body {
   border-top: 1px solid #5e5e5e;
 }
 
-.footer-menu h3 {
+.footer-menu {
+	width: 150px;
+	margin-right: 20px;
+}
+
+.footer-menu h3 {	
   font-weight: bold;
   font-size: 24px;
   font-family: "Georgia", serif;
@@ -425,6 +472,8 @@ body {
 }
 
 .footer-copyright {
+	margin-left: auto;
+
   color: #ffffff;
   text-transform: uppercase;
 }
