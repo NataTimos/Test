@@ -1,20 +1,3 @@
-* {
-outline: 1px dotted red;
-}
-ul {
- outline: : solid 2px violet;
-}
-
-span {
- outline: solid 1px green;
-}
-
-p {
- outline: solid 1px blue;
-}
-/*это потом убрать */
-
-
 /*HEADER*/
 body {
   /*min-width: 1040px;*/
@@ -102,17 +85,47 @@ body {
 }
 
 .btn {
+  align-self: center;
+
   color: #a38b70;
   text-transform: uppercase;
   text-decoration: none;
+  word-wrap: break-word;
+  text-align: center;
+  font: inherit;
+
+  border: 2px solid #a38b70;
+  border-radius: 2px;
+  padding: 10px;
+  width: 146px;
 }
 
 .btn:hover {
   color: #8d745a;
+  border-color: #8d745a;
 }
 
 .btn:active {
   color: rgba(141, 116, 90, 0.3);
+  border-color: #8d745a;
+}
+
+.btn-quick-order {
+  margin-top: 6px;
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-quick-order:hover {
+  color: #404040;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn-quick-order:active {
+  color: rgba(64, 64, 64, 0.3);
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .promo {
